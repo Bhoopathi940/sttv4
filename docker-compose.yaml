@@ -2,7 +2,6 @@ services:
   parakeet:
     build:
       context: .
-      dockerfile: Dockerfile
     image: parakeet-tdt:latest
     container_name: parakeet-stt
     ports:
