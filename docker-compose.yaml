@@ -10,3 +10,7 @@ services:
     volumes:
       - parakeet-models:/app/models
     restart: unless-stopped
+
+volumes:
+  parakeet-models:
+    name: parakeet-models
