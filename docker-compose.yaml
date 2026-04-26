@@ -1,0 +1,12 @@
+services:
+  parakeet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: parakeet-tdt:latest
+    container_name: parakeet-stt
+    ports:
+      - "8000:8000"
+    volumes:
+      - parakeet-models:/app/models
+    restart: unless-stopped
